@@ -1,0 +1,11 @@
+Logistic regression is a classification algo
+
+algorithm draws random line by taking random coefficients and check whether the points lie on posiitve region or the negative region of the line and transform the line in such a way that line passes in between the points 
+
+if any negative point is in the positive take 1 as a coefficient to make it 3 coefficient and substract it with coefficients the line equation you can see negative and positive regions of a line on desmos of a random line 2x+3y+5>0
+
+By default there are 1000 iterations in this algo to change coefficients
+
+NOTE - accuracy is the metric of classification
+
+accuracy = (Total correct predictions) / (total predictions)
