@@ -1,0 +1,28 @@
+Ques - How much Accuracy is good ?
+
+Ans - It depends on the problm we are solving
+
+Problem with Accuracy metric - 
+
+Accuracy score gives a number like 80% but it doesn't give the type of error which are occuring For Ex - in a classic binary classification problem like if there's a model which predict whether the patient has disease or not and the accuracy of the model is 90% so error is 10% but there could be 2 types of error -
+
+1. when patient had disease but model predicted he was healthy
+2. when patient didn't had disease but model predicted he had disease
+
+therefore, accuracy metric doesn't give the nature of mistake/error 
+
+so, to deal with this problem we use confusion matrix
+
+In a confusion matrix diagonal elements represent the correct predictions and we can also find accuracy by adding the diagonal elements and diving them by all the elements
+
+Type-1 error
+
+false positive(FP) is a type-1 error i.e. when your model predicted positive but it's false in real it was negatative
+
+Type-2 error
+
+false negative(FN) is a type-2 error i.e. when your model predicted negative but it's false in real it was positive
+
+Ques - When accuracy is misleading ?
+
+Ans - Imbalanced dataset
