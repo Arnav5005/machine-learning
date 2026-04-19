@@ -1,0 +1,46 @@
+Decision Tree
+
+A decision tree is just a nested if-else conditions
+
+Pseudo code
+
+1. Begin with your training dataset, which should have some feature variables and classification or regression output.
+
+2. Determine the "best feature" in the dataset to split the data on; more on how we define "best feature" later
+
+3. Split the data into subsets that contain the correct values for this best feature. This splitting basically defines a node on the tree i.e each node is a splitting point based on a certain feature from our data.
+
+4. Recursively generate new tree nodes by using the subset of data created from step 3.
+
+Conclusion
+
+--> Programatically speaking, Decision trees are nothing but a giant structure of nested if-else condition
+
+--> Mathematically speaking, Decision trees use hyperplanes which run parallel to any one of the axes to cut your coordinate    system into hyper cuboids
+
+In short - Decision tree then applies a recursive greedy search algorithm in top bottom fashion to find Information Gain at every level of the tree.
+
+Once the leaf node is reached (Entropy=0), no more splitting is done
+
+Random Forest
+
+it consists of 2 words - Random + Forest
+
+Forest - group of trees is called a forest means we are training multiple decision trees hyperplanes
+
+Random - random word comes from the fact that random forest is a bagging based technique 
+
+bagging - Bootstrap Aggregation
+
+Bootstrap - 
+
+bootstrap means we are doing sampling here i.e. selecting data randomly
+For Ex - 1. row sampling selecting random rows like any 500 rows , 
+2. column sampling selecting random columns ,
+3. combination of both rows and columns
+
+there are 2 ways for row and column sampling also i.e. with replacement (contains duplicate rows For Ex - you selected row number 69 from data and are using "with replacement" then that row returns to the data again and therefore that row can be selected again) and without replacement (doesn't contain duplicates For Ex - you selected row number 50 from data and are using "without replacement" then that row gets extinct from the data and therefore that row can not be selected again)
+
+Aggregation - 
+
+aggregation is the process of combining the individual predictions from multiple decision trees to form a single, final output For Ex - in a classification problem let's suppose there are 100 decision trees and 37 out of them gives the output to a certain question "Yes" and the rest 63 of them gives the output "No" then "No" will be the final answer . If the problem is of regression then the answer will be mean of outputs of all the decision trees  
